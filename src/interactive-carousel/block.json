@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "interactive-carousel/interactive-carousel",
+	"version": "0.1.0",
+	"title": "Interactive Carousel",
+	"category": "media",
+	"icon": "slides",
+	"keywords": [
+		"carousel",
+		"slider",
+		"gallery",
+		"posts",
+		"products"
+	],
+	"description": "Interactive carousel of latest posts or products filtered by category.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "interactive-carousel",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"script": "file:./slider-component.js",
+	"attributes": {
+		"backgroundColor": {
+			"type": "string"
+		},
+		"headingColor": {
+			"type": "string"
+		},	 
+		"textColor": {
+			"type": "string"
+		},
+		"selectedOption": {
+			"type": "string",
+			"default": "c2a-gallery"
+		},
+		"postsToShow": {
+			"type": "integer",
+			"default": 4
+		},
+		"displayThumbnail": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayExcerpt": {
+			"type": "boolean",
+			"default": true
+		},
+		"postType": {
+			"type": "string",
+			"default": "post"
+		},
+		"selectedProductCat": {
+			"type": "integer",
+			"default": 19
+		}
+	}
+}
