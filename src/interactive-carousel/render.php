@@ -176,7 +176,7 @@
 	      type="button"
 	      class="interactive-carousel__button interactive-carousel__button--prev"
 	      name="previous"
-	      aria-label="Previous Slide"
+	      aria-label="<?php echo esc_attr__( 'Previous Slide', 'interactive-carousel' ); ?>"
 	    >
 	    	<?php
 	    	  echo $attributes[ 'selectedOption' ] == 'caption-carousel' ?
@@ -200,7 +200,7 @@
 	      type="button"
 	      class="interactive-carousel__button interactive-carousel__button--next"
 	      name="next"
-	      aria-label="Next Slide"
+	      aria-label="<?php echo esc_attr__( 'Next Slide', 'interactive-carousel' ); ?>"
 	    >
 	      <?php
 	    	  echo $attributes[ 'selectedOption' ] == 'caption-carousel' ?
